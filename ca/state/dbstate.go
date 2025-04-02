@@ -180,6 +180,8 @@ func (s *CAStateManagerSQLSession) ListCACerts(keyName string, caid string, auth
 	q, params := constructListCACertsQuery(s.prov.Prov.DBName, keyName, caid,
 		authzFilter, queryFilter, pginfo)
 
+	log.Debugf("List Query: '%s', '%s'", q, params)
+
 	rows, err := s.db.Query(q, params...)
 	if err != nil {
 		log.Debugf("Failing query was %s", q)
