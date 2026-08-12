@@ -11,25 +11,10 @@ Core parts of dns3l written in Go:
 
 **Requires go >= 1.24**
 
-## Implementation Status
-
-Implemented:
-
-- Code skeleton
-- Config
-- REST API returns config
-- DNS handlers
-- ACME handlers
-- State, DB connection
-- OIDC Auth
-- Static token auth
-
-Not yet implemented:
-
-- Legacy CA handlers
-- Self-service token auth support
-
 # dns3ld (backend daemon)
+
+Check out this [ramp-up minimal setup](./ramp-up/README.md) to get started with
+dns3ld!
 
 ## Build
 
