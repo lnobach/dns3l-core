@@ -14,7 +14,7 @@ Core parts of dns3l written in Go:
 
 # dns3ld (backend daemon)
 
-Check out this [ramp-up minimal setup](./ramp-up/README.md) to get started with
+Check out this [ramp-up minimal setup](./rampup/README.md) to get started with
 dns3ld!
 
 ## Build
@@ -37,7 +37,7 @@ of dependencies (like the database), and will probably only be of value with the
 stack (this image is released as `ghcr.io/dns3l/dns3ld`).
 
 For standalone backend usage, e.g. for development and evaluation, use `docker/Dockerfile-dns3ld-simple`. This image has no hard-wired dependency and can be
-used in standalone mode. It is used e.g. in the [ramp-up minimal setup](./ramp-up/README.md).
+used in standalone mode. It is used e.g. in the [ramp-up minimal setup](./rampup/README.md).
 
 To obtain the image for the DNS3L stack, use
 ```
@@ -62,7 +62,7 @@ Before using dns3ld in production, you likely need to configure several endpoint
 like ACME or DNS providers, in the server's YAML-based config. Refer to
 `config-example.yaml` for details on available
 provider integrations and how to configure them. If you just want to get started quickly,
-you can use the available [ramp-up minimal setup](./ramp-up/README.md).
+you can use the available [ramp-up minimal setup](./rampup/README.md).
 
 ```
 $./dns3ld --help
